@@ -9,7 +9,7 @@ import {
   addProduct,
   updateProduct,
   deleteProduct
-} from "./services/productService";
+} from "./services/productServices";
 
 function App() {
 
