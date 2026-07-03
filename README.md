@@ -63,14 +63,7 @@ cd backend
 npm install
 ```
 
-### Create a `.env` file
 
-Create a `.env` file inside the **backend** folder and add:
-
-```env
-PORT=5000
-MONGO_URI=mongodb://127.0.0.1:27017/productdb
-```
 
 > Make sure MongoDB Community Server is installed and running on your computer.
 
