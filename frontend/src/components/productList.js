@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 function ProductList({ products, editProduct, deleteProduct }) {
   return (
     <div className="container">
@@ -36,9 +35,7 @@ function ProductList({ products, editProduct, deleteProduct }) {
         </tbody>
 
       </table><br></br>
-       <Link to="/">
-       <button className="add-btn">Add Product</button>
-       </Link>
+       
       
     </div>
   );

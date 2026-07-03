@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+
 
 function ProductForm({ addProduct, updateProduct, editProduct }) {
 
@@ -94,9 +94,7 @@ function ProductForm({ addProduct, updateProduct, editProduct }) {
 
         <br /><br />
 
-        <Link to="/products">
-          <button type="button">View Products</button>
-        </Link>
+        
 
       </form>
 

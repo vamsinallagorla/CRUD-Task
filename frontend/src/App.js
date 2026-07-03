@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
 import ProductForm from "./components/productForm";
@@ -10,9 +9,10 @@ import {
   addProduct,
   updateProduct,
   deleteProduct
-} from "./services/productServices";
+} from "./services/productService";
 
 function App() {
+
   const [products, setProducts] = useState([]);
   const [editProduct, setEditProduct] = useState(null);
 
@@ -49,31 +49,25 @@ function App() {
   };
 
   return (
-    <Routes>
+    <div className="container">
 
-      <Route
-        path="/"
-        element={
-          <ProductForm
-            addProduct={handleAddProduct}
-            updateProduct={handleUpdateProduct}
-            editProduct={editProduct}
-          />
-        }
+      <h1>Product CRUD Application</h1>
+
+      <ProductForm
+        addProduct={handleAddProduct}
+        updateProduct={handleUpdateProduct}
+        editProduct={editProduct}
       />
 
-      <Route
-        path="/products"
-        element={
-          <ProductList
-            products={products}
-            editProduct={handleEditProduct}
-            deleteProduct={handleDeleteProduct}
-          />
-        }
+      <br />
+
+      <ProductList
+        products={products}
+        editProduct={handleEditProduct}
+        deleteProduct={handleDeleteProduct}
       />
 
-    </Routes>
+    </div>
   );
 }
 
