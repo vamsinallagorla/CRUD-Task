@@ -28,7 +28,7 @@ This is a full-stack CRUD (Create, Read, Update, Delete) application built using
 
 ## Project Structure
 
-```
+```text
 CRUD-Task/
 │
 ├── backend/
@@ -62,13 +62,29 @@ git clone https://github.com/vamsinallagorla/CRUD-Task.git
 ```bash
 cd backend
 npm install
+```
+
+### Create a `.env` file
+
+Create a `.env` file inside the **backend** folder and add:
+
+```env
+PORT=5000
+MONGO_URI=mongodb://127.0.0.1:27017/productdb
+```
+
+> Make sure MongoDB Community Server is installed and running on your computer.
+
+### Start the Backend
+
+```bash
 npm start
 ```
 
 ### Frontend Setup
 
 ```bash
-cd frontend
+cd ../frontend
 npm install
 npm start
 ```
